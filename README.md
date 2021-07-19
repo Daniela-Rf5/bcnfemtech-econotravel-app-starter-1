@@ -26,8 +26,10 @@ npm run build
 ```
 
 - Desde el proyecto de Gradle, usando la tarea `buildFrontend` de Gradle
-
+- Abrir carpeta other y doble clic a buildFrontend
+-luego en application doble clic a bootRun, allí compilará todo el FrontEnd
 ```bash
+
 ./gradlew buildFrontend
 ```
 
@@ -44,6 +46,8 @@ Usando la tarea `build` de Gradle.
 
 Si no queremos tener que lanzar el servidor cada vez que queremos visualizar un cambio en 
 el frontend, es posible usar **webpack dev server**, haciendo: 
+
+-entrando desde la terminal a la carpeta web-client haciendo: **/bcnfemtech-econotravel-app-starter-1\> cd web-client**
 
 ```
 npm run develop
