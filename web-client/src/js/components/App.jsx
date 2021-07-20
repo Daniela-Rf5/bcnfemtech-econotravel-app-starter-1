@@ -1,5 +1,5 @@
 import * as React from "react";
-import {NavigationBar} from "./NavigationBar";
+import {NavigationBar} from "./navigationBar";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import {About} from "./about";
 import {Experiences} from "./experiences";

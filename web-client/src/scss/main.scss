@@ -1,54 +1,23 @@
-#app {
-  height: 100vh;
-  padding: 20%;
+body{
+  margin: 0;
 }
 
-.experiencesList {
-  border: thin solid #444444;
-  width: 300px;
-  margin: auto;
-  border-radius: 12px;
-  background-color: whitesmoke;
+.navigationBar {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background: #E6FCE6;
+  justify-content: flex-end;
+  font-family:ropa-sans, Calibri, SansSerif,"Roboto Light";
 
-  &__title {
-    text-align: center;
-  }
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-  }
+  a {
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #4b7f55;
 
-  &__item {
-    box-shadow: #444444 1px 1px;
-    border: thin solid black;
-  }
-}
 
-.experience {
-
-  height: 120px;
-  position: relative;
-  text-align: center;
-
-  &__name {
-    padding: 20%;
-  }
-
-  &__details {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
-
-  }
-  &:hover &__details {
-    width: 100%;
   }
 }
