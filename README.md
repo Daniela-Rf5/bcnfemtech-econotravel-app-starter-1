@@ -58,6 +58,10 @@ npm run develop
 Una vez arrancada la aplicación, puede accederse al panel de configuración
 de H2 disponible en `/h2-ui`
 
+-primero debemos ir en el intelliJ al aplication.properties y copiar: jdbc:h2:mem:test
+
+-Pegarlo en la sección donde indica *URL*
+
 ![panel de h2](doc/images/h2-ui.png)
 
 
