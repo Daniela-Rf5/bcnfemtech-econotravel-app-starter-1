@@ -1,7 +1,12 @@
 import * as React from "react";
 
-export const Experiences = () => <div>
+export const Experiences = () => (
 
-    Estas son las experiencias
+    <div className={experiences}>
+        
 
-</div>
+
+
+    </div>
+
+)
