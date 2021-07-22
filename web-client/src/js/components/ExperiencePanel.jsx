@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {useEffect, useState} from "react";
-import {ExperienceApi} from "../apis/experiencesApi"
+import {ExperienceApi} from "../apis/experiencesApi";
 
 export const ExperiencePanel = () => {
 

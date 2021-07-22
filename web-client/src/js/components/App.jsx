@@ -2,7 +2,8 @@ import * as React from "react";
 import {NavigationBar} from "./navigationBar";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import {About} from "./about";
-import {Experiences} from "./experiences";
+import {ExperiencePanel} from "./ExperiencePanel";
+
 
 export const App = () => {
 
@@ -13,8 +14,8 @@ export const App = () => {
                 <About/>
             </Route>
 
-            <Route path ="/experiences">
-                <Experiences/>
+            <Route path ="/ExperiencePanel">
+                <ExperiencePanel/>
             </Route>
         </Switch>
     </Router>
