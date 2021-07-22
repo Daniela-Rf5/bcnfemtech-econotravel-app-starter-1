@@ -16,6 +16,7 @@ export const App = () => {
 
             <Route path ="/ExperiencePanel">
                 <ExperiencePanel/>
+                <experience/>
             </Route>
         </Switch>
     </Router>
