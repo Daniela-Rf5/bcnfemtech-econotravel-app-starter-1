@@ -12,5 +12,6 @@ export const NavigationBar = () => (
 
         <Link to={"/about"}>Quiénes somos</Link>
         <Link to={"/ExperiencePanel"}>Experiencias</Link>
+        <Link to={"/reservas"}>Reservas</Link>
     </nav>
 )

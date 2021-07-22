@@ -46,6 +46,9 @@ export const App = () => {
             <Route path="/ExperiencePanel">
                 <ExperiencePanel experiences={experiences}/>
             </Route>
+        <Route path={"/reservas"}>
+                <reservas/>
+        </Route>
         </Switch>
     </Router>
 }
