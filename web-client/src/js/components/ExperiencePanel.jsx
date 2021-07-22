@@ -13,7 +13,7 @@ export const ExperiencePanel = (props) => {
         let experienceApi = new ExperienceApi()
         experienceApi.getExperiences()
             .then( experiences => setExperiences(experiences))
-    }, [props]);
+    }, []);
 
     return <div className={"experiencesList"}>
         <p className={"experiencesList__title"}>Experiences</p>
