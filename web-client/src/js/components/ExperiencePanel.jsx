@@ -2,7 +2,7 @@ import * as React from 'react';
 import {useEffect, useState} from "react";
 import {ExperienceApi} from "../apis/experiencesApi";
 
-export const ExperiencePanel = () => {
+export const ExperiencePanel = (props) => {
 
     const [experiences, setExperiences] = useState([]);
 
@@ -13,7 +13,7 @@ export const ExperiencePanel = () => {
         let experienceApi = new ExperienceApi()
         experienceApi.getExperiences()
             .then( experiences => setExperiences(experiences))
-    }, []);
+    }, [props]);
 
     return <div className={"experiencesList"}>
         <p className={"experiencesList__title"}>Experiences</p>
@@ -22,7 +22,7 @@ export const ExperiencePanel = () => {
                 <div className={"experiencesList__item experience"}>
                     <div className={"experience__name"}> {experience.name} </div>
                     <div className={"experience__description"}>{experience.description}</div>
-                    <div className={"experience__details"}> {experience.pricePerPerson + " €" } </div>
+                    <div className={"experience__details"}> {experience.pricePerPerson} " €" </div>
                 </div>
             )}
         </div>
