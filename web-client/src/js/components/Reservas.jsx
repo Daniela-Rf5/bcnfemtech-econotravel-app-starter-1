@@ -1,8 +1,8 @@
 import * as React from 'react';
-import {useState} from "react";
+import {Link, Route, Switch} from "react-router-dom";
+import {FinalReserva} from "./FinalReserva";
 
-
-export const FormularioReserva =() => {
+export const FormularioReserva = () => {
     return (
         <form>
             <div>
@@ -43,15 +43,24 @@ export const FormularioReserva =() => {
             <div>
                 <label>Actividad</label>
                 <select id="actividad" name="actividad">
-                <option value={"actividad1"}> Paseo en bicicleta por el Montseny</option>
-                <option value={"actividad2"}> Descubre la costa en barco de vela </option>
-                <option value={"actividad3"}> Descubre la Barcelona Modernista de noche</option>
-                <option value={"actividad4"}> Del huerto a la mesa </option>
+                    <option value={"actividad1"}> Paseo en bicicleta por el Montseny</option>
+                    <option value={"actividad2"}> Descubre la costa en barco de vela</option>
+                    <option value={"actividad3"}> Descubre la Barcelona Modernista de noche</option>
+                    <option value={"actividad4"}> Del huerto a la mesa</option>
                 </select>
             </div>
             <div>
-                <button onClick={this.FinalReserva}>Enviar</button>
+                <button>
+                    <Route>
+                        <Switch>
+                            <Link to={"/FinalReserva"}>Reservar</Link>
+                            <FinalReserva/>
+                        </Switch>
+                    </Route>
+                </button>
             </div>
+
         </form>
+
     )
 }
