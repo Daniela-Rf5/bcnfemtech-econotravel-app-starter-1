@@ -1,78 +1,56 @@
-import React, { useState } from 'react';
+import * as React from 'react';
+import {useState} from "react";
 
 
-export const FormularioReserva= (props) => {
-    const estadoInicialFormulario = { id: null, nombre: '',correo: '', fecha: '', personas: '', actividad: ''};
-    const gestionarCampo = (event) => {
-        const { name, value } = event.target;
-        setReserva({ ...reserva, [name]: value });
-    }
+export const FormularioReserva =() => {
     return (
-        <form
-            onSubmit={event => {
-                event.preventDefault();
-                if (!reserva.nombre || !reserva.correo) return;
-                props.agregarReserva(reserva);
-                setReserva(estadoInicialFormulario);
-            }}
-        >
-            <div className="form-group">
+        <form>
+            <div>
                 <label>Nombre</label>
                 <input
                     id="nombre"
-                    className="form-control"
                     type="text"
                     name="nombre"
-                    value={reserva.nombre}
-                    onChange={gestionarCampo}
                 />
             </div>
-            <div className="form-group">
+            <div>
                 <label>Correo</label>
                 <input
                     id="correo"
-                    className="form-control"
-                    type="text"
+                    type="email"
                     name="correo"
-                    value={reserva.correo}
-                    onChange={gestionarCampo}
+
                 />
             </div>
-            <div className="form-group">
+            <div>
                 <label>Fecha</label>
                 <input
                     id="fecha"
-                    className="form-control"
-                    type="text"
+                    type="date"
                     name="fecha"
-                    value={reserva.fecha}
-                    onChange={gestionarCampo}
+
                 />
             </div>
-            <div className="form-group">
+            <div>
                 <label>Numero de personas</label>
                 <input
                     id="personas"
-                    className="form-control"
-                    type="text"
+                    type="number"
                     name="personas"
-                    value={reserva.personas}
-                    onChange={gestionarCampo}
+
                 />
             </div>
-            <div className="form-group">
+            <div>
                 <label>Actividad</label>
-                <input
-                    id="actividad"
-                    className="form-control"
-                    type="text"
-                    name="actividad"
-                    value={reserva.actividad}
-                    onChange={gestionarCampo}
-                />
+                <select id="actividad" name="actividad">
+                <option value={"actividad1"}> Paseo en bicicleta por el Montseny</option>
+                <option value={"actividad2"}> Descubre la costa en barco de vela </option>
+                <option value={"actividad3"}> Descubre la Barcelona Modernista de noche</option>
+                <option value={"actividad4"}> Del huerto a la mesa </option>
+                </select>
             </div>
-            <div className="form-group">
-                <button type="submit" className="btn btn-primary">Agregar usuario</button>
+            <div>
+                <button onClick={this.FinalReserva}>Enviar</button>
             </div>
         </form>
     )
