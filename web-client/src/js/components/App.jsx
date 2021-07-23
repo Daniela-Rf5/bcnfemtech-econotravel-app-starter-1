@@ -3,7 +3,7 @@ import {NavigationBar} from "./navigationBar";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import {About} from "./about";
 import {ExperiencePanel} from "./ExperiencePanel";
-import {Reservas} from "./Reservas";
+import {FormularioReserva} from "./Reservas";
 
 export class App extends React.Component {
     render() {
@@ -47,8 +47,8 @@ export class App extends React.Component {
                 <Route path="/ExperiencePanel">
                     <ExperiencePanel experiences={experiences}/>
                 </Route>
-                <Route path={"/reservas"}>
-                    <Reservas reservas={this.reservas}/>
+                <Route path={"/Reservas"}>
+                    <Reservas name={name}/>
                 </Route>
             </Switch>
         </Router>

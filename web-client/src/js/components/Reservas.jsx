@@ -1,31 +1,79 @@
-import * as React from 'react';
-import {useEffect, useState} from "react";
-import {ReservasApi} from "../apis/reservasApi";
+import React, { useState } from 'react';
 
-export const Reservas = (props) => {
 
-    const [reservas, setReservas] = useState([]);
-
-    // useEffect con el parámetro "[]"
-    // se puede usar para inicializar el componente.
-    // Más info: https://es.reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects
-    useEffect(() => {
-        let reservasApi = new ReservasApi()
-        reservasApi.getReservas()
-            .then( reservas => setReservas(reservas))
-    }, []);
-
-    return <div className={"experiencesList"}>
-        <p className={"experiencesList__title"}>Reservas</p>
-        <div className={"experiencesList__list"}>
-            {props.reservas.map((reservas) =>
-                <div className={"experiencesList__item experience"}>
-                    <div className={"experience__name"}> {reservas.name} </div>
-                    <div className={"experience__description"}>{reservas.description}</div>
-                    <div className={"experience__details"}> {reservas.pricePerPerson}€ por persona</div>
-                </div>
-            )}
-        </div>
-    </div>
-
+export const FormularioReserva= (props) => {
+    const estadoInicialFormulario = { id: null, nombre: '',correo: '', fecha: '', personas: '', actividad: ''};
+    const gestionarCampo = (event) => {
+        const { name, value } = event.target;
+        setReserva({ ...reserva, [name]: value });
+    }
+    return (
+        <form
+            onSubmit={event => {
+                event.preventDefault();
+                if (!reserva.nombre || !reserva.correo) return;
+                props.agregarReserva(reserva);
+                setReserva(estadoInicialFormulario);
+            }}
+        >
+            <div className="form-group">
+                <label>Nombre</label>
+                <input
+                    id="nombre"
+                    className="form-control"
+                    type="text"
+                    name="nombre"
+                    value={reserva.nombre}
+                    onChange={gestionarCampo}
+                />
+            </div>
+            <div className="form-group">
+                <label>Correo</label>
+                <input
+                    id="correo"
+                    className="form-control"
+                    type="text"
+                    name="correo"
+                    value={reserva.correo}
+                    onChange={gestionarCampo}
+                />
+            </div>
+            <div className="form-group">
+                <label>Fecha</label>
+                <input
+                    id="fecha"
+                    className="form-control"
+                    type="text"
+                    name="fecha"
+                    value={reserva.fecha}
+                    onChange={gestionarCampo}
+                />
+            </div>
+            <div className="form-group">
+                <label>Numero de personas</label>
+                <input
+                    id="personas"
+                    className="form-control"
+                    type="text"
+                    name="personas"
+                    value={reserva.personas}
+                    onChange={gestionarCampo}
+                />
+            </div>
+            <div className="form-group">
+                <label>Actividad</label>
+                <input
+                    id="actividad"
+                    className="form-control"
+                    type="text"
+                    name="actividad"
+                    value={reserva.actividad}
+                    onChange={gestionarCampo}
+                />
+            </div>
+            <div className="form-group">
+                <button type="submit" className="btn btn-primary">Agregar usuario</button>
+            </div>
+        </form>
+    )
 }
