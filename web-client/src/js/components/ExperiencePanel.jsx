@@ -22,7 +22,7 @@ export const ExperiencePanel = (props) => {
                 <div className={"experiencesList__item experience"}>
                     <div className={"experience__name"}> {experience.name} </div>
                     <div className={"experience__description"}>{experience.description}</div>
-                    <div className={"experience__details"}> {experience.pricePerPerson}€ por persona</div>
+                    <div className={"experience__details"}> <p className={"parrafo__precio"}>{experience.pricePerPerson}€ por persona</p></div>
                 </div>
             )}
         </div>
