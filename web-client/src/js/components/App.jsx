@@ -5,6 +5,7 @@ import {About} from "./about";
 import {ExperiencePanel} from "./ExperiencePanel";
 import {FormularioReserva} from "./Reservas";
 import {FinalReserva} from "./FinalReserva";
+import {Footer} from "./Footer";
 
 export class App extends React.Component {
     render() {
@@ -40,6 +41,7 @@ export class App extends React.Component {
 
         return <Router>
             <NavigationBar/>
+            <Footer/>
             <Switch>
                 <Route path="/about">
                     <About/>
