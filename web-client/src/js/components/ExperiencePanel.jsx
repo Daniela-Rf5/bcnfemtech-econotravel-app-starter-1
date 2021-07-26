@@ -16,13 +16,13 @@ export const ExperiencePanel = (props) => {
     }, []);
 
     return <div className={"experiencesList"}>
-        <p className={"experiencesList__title"}>Experiences</p>
+        <p className={"experiencesList__title"}>Experiencias</p>
         <div className={"experiencesList__list"}>
             {props.experiences.map((experience) =>
                 <div className={"experiencesList__item experience"}>
                     <div className={"experience__name"}> {experience.name} </div>
                     <div className={"experience__description"}>{experience.description}</div>
-                    <div className={"experience__details"}> <p className={"parrafo__precio"}>{experience.pricePerPerson}€ por persona</p></div>
+                    <div className={"experience__details"}> <p className={"parrafo__precio"}><span>{experience.pricePerPerson}€</span> por persona</p></div>
                 </div>
             )}
         </div>
