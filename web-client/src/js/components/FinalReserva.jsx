@@ -1,4 +1,5 @@
 import * as React from "react";
+import {FormularioReserva} from "./Reservas";
 
 export const FinalReserva = () => <section>
 

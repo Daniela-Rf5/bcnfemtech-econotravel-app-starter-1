@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import {About} from "./about";
 import {ExperiencePanel} from "./ExperiencePanel";
 import {FormularioReserva} from "./Reservas";
+import {FinalReserva} from "./FinalReserva";
 
 export class App extends React.Component {
     render() {
@@ -37,7 +38,6 @@ export class App extends React.Component {
 
         ];
 
-
         return <Router>
             <NavigationBar/>
             <Switch>
@@ -50,7 +50,11 @@ export class App extends React.Component {
                 <Route path={"/Reservas"}>
                     <FormularioReserva experiences={experiences}/>
                 </Route>
+                <Route path={"/FinalReserva"}>
+                <FinalReserva/>
+            </Route>
             </Switch>
         </Router>
+
     }
 }

@@ -51,16 +51,10 @@ export const FormularioReserva = () => {
             </div>
             <div>
                 <button>
-                    <Route>
-                        <Switch>
-                            <Link to={"/FinalReserva"}>Reservar</Link>
-                            <FinalReserva/>
-                        </Switch>
-                    </Route>
+                    <Link to={"./FinalReserva"}>Reservar</Link>
                 </button>
             </div>
-
-        </form>
+</form>
 
     )
 }
