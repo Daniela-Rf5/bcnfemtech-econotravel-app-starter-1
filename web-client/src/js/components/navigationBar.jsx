@@ -9,9 +9,10 @@ export const NavigationBar = () => (
         <div>
             <img className={"Logo"} src={logo}/>
         </div>
-
-        <Link to={"/about"}>Quiénes somos</Link>
-        <Link to={"/ExperiencePanel"}>Experiencias</Link>
-        <Link to={"/reservas"}>Reservas</Link>
+        <div>
+            <Link to={"/about"}>Quiénes somos</Link>
+            <Link to={"/ExperiencePanel"}>Experiencias</Link>
+            <Link to={"/reservas"}>Reservas</Link>
+        </div>
     </nav>
 )

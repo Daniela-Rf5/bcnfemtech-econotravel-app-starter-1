@@ -1,7 +1,7 @@
 import * as React from "react";
 
 
-export const About = () => <section>
+export const About = () => <section className={"parrafos"}>
 
     <p>
         Nuestra empresa se fundó a raíz de un viaje que nuestra fundadora, Marina Herrán, realizó en bicicleta por

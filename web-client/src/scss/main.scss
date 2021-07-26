@@ -7,17 +7,23 @@ body{
   align-items: center;
   height: 100px;
   background: #E6FCE6;
-  justify-content: flex-end;
   font-family:ropa-sans, Calibri, SansSerif,"Roboto Light";
+  justify-content: space-between;
 
+}
 
-  a {
-    text-decoration: none;
-    padding: 20px;
-    font-weight: bolder;
-    font-size: 25px;
-    color: #4b7f55;
+a {
+  text-decoration: none;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #4b7f55;
+}
+.Logo{
+  width: 110px;
+  height: 100px;
+  text-align: center;
+  margin-left:20px;
+  justify-content: flex-start;
 
-
-  }
 }
