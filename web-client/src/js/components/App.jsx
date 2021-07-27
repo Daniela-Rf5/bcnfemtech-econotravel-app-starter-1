@@ -6,11 +6,11 @@ import {ExperiencePanel} from "./ExperiencePanel";
 import {FormularioReserva} from "./Reservas";
 import {FinalReserva} from "./FinalReserva";
 import {Footer} from "./Footer";
-import bicicleta from "./assets/bicicleta.jpg";
-import viajeBarco from "./assets/viajeBarco.jpg";
-import barcelonaModerna from "./assets/barcelonaModerna.jpg";
-import huerto from "./assets/huerto.jpg";
-import montañaSagrada from "./assets/montañaSagrada.jpg";
+import bicicleta from "./assets/bicicleta.png";
+import viajeBarco from "./assets/viajeBarco.png";
+import barcelonaModerna from "./assets/barcelonaModerna.png";
+import huerto from "./assets/huerto.png";
+import montañaSagrada from "./assets/montañaSagrada.png";
 import fundadora from "./assets/fundadora.jpg";
 export class App extends React.Component {
     render() {
