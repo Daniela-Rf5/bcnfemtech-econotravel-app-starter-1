@@ -12,6 +12,9 @@ import barcelonaModerna from "./assets/barcelonaModerna.png";
 import huerto from "./assets/huerto.png";
 import montañaSagrada from "./assets/montañaSagrada.png";
 import fundadora from "./assets/fundadora.jpg";
+import {Home} from "./Home"
+
+
 
 export class App extends React.Component {
     render() {
