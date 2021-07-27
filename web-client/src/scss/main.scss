@@ -60,7 +60,7 @@ a {
   justify-content:center;
   align-items: center;
   justify-content: flex-end;
-  margin-left: 10%;
+  margin-left: 2%;
 }
 .titleExperience {
   text-align: center;
@@ -73,12 +73,11 @@ a {
   display: flex;
   padding: 2px;
   text-align: center;
+  justify-content: center;
 }
 
 .experienceImage {
-  width: 30%;
-  background-color: red;
-
+  width: 35%;
 }
 
 .experienceImage img {
@@ -86,7 +85,6 @@ a {
 }
 
 .experienceText {
-  background-color: blue;
   width: 60%;
   align-items: center;
 }
