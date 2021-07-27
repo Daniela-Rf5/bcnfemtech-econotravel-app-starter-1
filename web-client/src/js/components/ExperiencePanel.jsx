@@ -15,22 +15,26 @@ export const ExperiencePanel = (props) => {
             .then(experiences => setExperiences(experiences))
     }, []);
 
-    return <div className={"experiencesList"}>
-        <p className={"experiencesList__title"}>Experiencias</p>
-        <div className={"experiencesList__list"}>
-            {props.experiences.map((experience) =>
-                <div className={"experiencesList__item experience"}>
-                    <div className={"experience__image"}>{experience.image}</div>
-                    <div className={"experience__container"}>
+    return <div>
+        <p className={"titleExperience"}>Experiencias</p>
 
-                        <div className={"experience__name"}> {experience.name} </div>
-                        <div className={"experience__description"}>{experience.description}</div>
-                        <div className={"parrafo__precio"}><p> <span>{experience.pricePerPerson}€</span> por persona</p></div>
+        <div className={"experienceSection"}>
+            {props.experiences.map((experience) =>
+                <div className={"experienceCard"} key={experience.id}>
+                    <div className={"experienceImage"}>
+                       <div>{experience.image}</div>
+                    </div>
+                    <div className={"experienceText"}>
+                        <h1 className={"experienceName"}> {experience.name} </h1>
+                        <p className={"experienceDescription"}>{experience.description}</p>
+                        <h2 className={"parrafoPrecio"}><p><span>{experience.pricePerPerson}€</span> por persona</p>
+                        </h2>
                     </div>
                 </div>
             )}
         </div>
-    </div> }
+    </div>
+}
 
 
 

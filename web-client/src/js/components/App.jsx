@@ -6,11 +6,11 @@ import {ExperiencePanel} from "./ExperiencePanel";
 import {FormularioReserva} from "./Reservas";
 import {FinalReserva} from "./FinalReserva";
 import {Footer} from "./Footer";
-import bicicleta from "./assets/bicicleta.png";
-import viajeBarco from "./assets/viajeBarco.png";
-import barcelonaModerna from "./assets/barcelonaModerna.png";
-import huerto from "./assets/huerto.png";
-import montañaSagrada from "./assets/montañaSagrada.png";
+import bicicleta from "./assets/bicicleta.jpg";
+import viajeBarco from "./assets/viajeBarco.jpg";
+import barcelonaModerna from "./assets/barcelonaModerna.jpg";
+import huerto from "./assets/huerto.jpg";
+import montanaSagrada from "./assets/montanaSagrada.jpg";
 import fundadora from "./assets/fundadora.jpg";
 import {Home} from "./Home"
 
@@ -51,7 +51,7 @@ export class App extends React.Component {
             },
             {
                 id: 5,
-                image: <img src={montañaSagrada}/>,
+                image: <img src={montanaSagrada}/>,
                 name: 'Arte en la montaña sagrada',
                 description: 'Disfruta de la impresionante Montaña de Montserrat donde encontraréis el Museo con las salas modernistas de Puig i Cadafalch, lugar que acoge colecciones de gran valor en el corazón de la emblemática montaña. En el Museo encontraréis pinturas del Renacimiento y del Barroco que conviven con autores de los siglos XIX y XX, objetos del Próximo Oriente y orfebrería. Además de disfrutar de un paseo guiado por la montaña y el Museo, esta actividad incluye tentempié variado acompañado de vino espumoso, cava brut o refresco.',
                 pricePerPerson: 125
@@ -68,7 +68,6 @@ export class App extends React.Component {
 
                 <Route path="/about">
                     <About/>
-                    image: <img src={fundadora}/>
                 </Route>
                 <Route path="/experiencias">
                     <ExperiencePanel experiences={experiences}/>

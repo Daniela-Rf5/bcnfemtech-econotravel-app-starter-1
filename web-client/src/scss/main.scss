@@ -1,11 +1,8 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
 body {
   margin: 0;
   padding: 0;
+  font-family: "Verdana", sans-serif, "Roboto Light";
+
 }
 
 .navigationBar {
@@ -13,7 +10,6 @@ body {
   align-items: center;
   height: 100px;
   background: #E6FCE6;
-  font-family: ropa-sans, Calibri, SansSerif, "Roboto Light";
   justify-content: space-between;
 
 }
@@ -24,7 +20,6 @@ body {
   height: 15%;
   background-color: #4b7f55;
   color: #FFFFFFFF;
-  font-family: ropa-sans, Calibri, SansSerif, "Roboto Light";
   font-size: 18px;
   bottom: 0;
   position: fixed;
@@ -59,57 +54,56 @@ a {
 }
 
 /*Experiencia*/
-
-
-.experience {
-  display: flex;
-  font-family: ropa-sans, Calibri, SansSerif, "Roboto Light";
-  margin: 80px 100px;
-  padding: 2px;
-  text-align: justify;
-}
-
-.experiencesList__title {
+.titleExperience {
   text-align: center;
   height: 50px;
   font-size: 60px;
   color: brown;
 }
 
-.experience__name {
+.experienceCard {
+  display: flex;
+  padding: 2px;
+  text-align: center;
+}
+
+.experienceImage {
+  width: 30%;
+  height: 30%;
+  background-color: red;
+
+}
+
+.experienceImage div {
+  width: 30%;
+  height: 30%;
+}
+
+.experienceText {
+  background-color: blue;
+  width: 70%;
+}
+
+.experienceName {
   font-weight: bolder;
   font-size: 35px;
   color: #4b7f55;
   text-align: center;
 }
 
-.experience__image {
-  height: 30px;
-  width: 30px;
-
-}
-
-.experience__container {
-  margin: 30px;
-  padding: 30px;
-}
-
-
-.experience__description {
+.experienceDescription {
   font-size: 18px;
   padding: 30px;
-
+  text-align: justify;
 }
 
-.experience__details {
-  display: flex;
-
-}
-
-.parrafo__precio span {
-  font-size: 18px;
+.parrafoPrecio span {
+  font-size: 15px;
   color: #028174;
   background: #FFE3B3;
   font-weight: bolder;
 }
+
+
+
 
