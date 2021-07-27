@@ -57,24 +57,21 @@ a {
 
 /*Experiencia*/
 
-.experiencesList {
+
+.experience {
   display: flex;
   font-family: ropa-sans, Calibri, SansSerif, "Roboto Light";
-  margin: 80px 80px;
+  margin: 80px 100px;
   padding: 2px;
   text-align: justify;
-  width: 80%;
-  height: 80%;
-  justify-content: center;
-
+}
   .experiencesList__title {
+    text-align: center;
     height: 50px;
-    font-size: 30px;
-    display: flex;
-
+    font-size: 60px;
+    color: brown;
   }
-
-  .experience__name {
+     .experience__name {
     font-weight: bolder;
     font-size: 35px;
     color: #4b7f55;
@@ -82,20 +79,18 @@ a {
   }
 
   .experience__image{
-    width: 10px;
-    height: 20px;
+    height: 30px;
   }
 
   .experience__description {
     font-size:18px;
-    font-weight: 300;
+    padding: 30px;
+
   }
 
   .experience__details {
-    padding: 5%;
-    margin-left: 84%;
-    margin-right: 5%;
-    width:20%;
+    display: flex;
+
   }
 
   .parrafo__precio span{
@@ -104,4 +99,4 @@ a {
     background: #FFE3B3;
     font-weight: bolder;
   }
-}
+
