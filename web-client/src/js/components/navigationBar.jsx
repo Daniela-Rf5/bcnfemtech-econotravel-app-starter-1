@@ -11,7 +11,7 @@ export const NavigationBar = () => (
         </div>
         <div>
             <Link to={"/about"}>Quiénes somos</Link>
-            <Link to={"/ExperiencePanel"}>Experiencias</Link>
+            <Link to={"/experiencias"}>Experiencias</Link>
             <Link to={"/reservas"}>Reservas</Link>
         </div>
     </nav>
