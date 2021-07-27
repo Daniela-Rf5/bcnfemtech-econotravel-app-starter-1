@@ -27,8 +27,8 @@ export const ExperiencePanel = (props) => {
                     <div className={"experienceText"}>
                         <h1 className={"experienceName"}> {experience.name} </h1>
                         <p className={"experienceDescription"}>{experience.description}</p>
-                        <h2 className={"parrafoPrecio"}><p><span>{experience.pricePerPerson}€</span> por persona</p>
-                        </h2>
+                        <h3 className={"parrafoPrecio"}><p>{experience.pricePerPerson}€ por persona</p>
+                        </h3>
                     </div>
                 </div>
             )}

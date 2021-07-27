@@ -54,6 +54,14 @@ a {
 }
 
 /*Experiencia*/
+
+.experienceSection{
+  display: block;
+  justify-content:center;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 10%;
+}
 .titleExperience {
   text-align: center;
   height: 50px;
@@ -69,19 +77,18 @@ a {
 
 .experienceImage {
   width: 30%;
-  height: 30%;
   background-color: red;
 
 }
 
-.experienceImage div {
-  width: 30%;
-  height: 30%;
+.experienceImage img {
+  width: 100%;
 }
 
 .experienceText {
   background-color: blue;
-  width: 70%;
+  width: 60%;
+  align-items: center;
 }
 
 .experienceName {
@@ -92,10 +99,10 @@ a {
 }
 
 .experienceDescription {
-  font-size: 18px;
-  padding: 30px;
+  font-size: 15px;
+  padding: 20px;
   text-align: justify;
-}
+  }
 
 .parrafoPrecio span {
   font-size: 15px;
