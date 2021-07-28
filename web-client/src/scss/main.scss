@@ -8,7 +8,7 @@ body {
 .navigationBar {
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 80px;
   background: #E6FCE6;
   justify-content: space-between;
 
@@ -93,15 +93,8 @@ a {
   display: block;
   justify-content:center;
   align-items: center;
-  justify-content: flex-end;
   margin-left: 2%;
   padding: 50px;
-}
-.titleExperience {
-  text-align: center;
-  height: 50px;
-  font-size: 30px;
-  color: #532222;
 }
 
 .experienceCard {
@@ -110,31 +103,31 @@ a {
   text-align: center;
   justify-content: center;
   border-radius: 10px;
-  border: 2px solid #008370;
+  border: 3px solid #008370;
   margin-bottom: 18px;
   margin-right: 50px;
 }
 
 .experienceImage {
-  width: 45%;
-  margin-right: 1%;
-  align-items: center;
+  width: 70%;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .experienceImage img {
   width: 80%;
   height: 80%;
-
+  filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 1));
 }
 
 .experienceText {
-  width: 50%;
+  width: 80%;
   align-items: center;
 }
 
 .experienceName {
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 20px;
   color: #4b7f55;
   text-align: center;
 }
@@ -146,7 +139,7 @@ a {
   }
 
 .parrafoPrecio span {
-  font-size: 13px;
+  font-size: 18px;
   color: #028174;
   background: #FFE3B3;
   font-weight: bolder;
@@ -168,15 +161,21 @@ a {
 }
 
 /*Actividades*/
-
+.form1{
+  border: 2px solid #4b7f55;
+  border-radius: 15px;
+  background-color: #f6e4c9;
+  margin: 14px 181px 47px 218px;
+}
 .form {
   display:flex;
   flex-direction: column;
   width:100%;
   font-size: 15px;
-  margin: 50px;
-  height: 100%;
+  margin: 36px 0 -23px 0px;
   align-items: center;
+  border-color: #4b7f55;
+
 }
 
 .labels{
@@ -187,9 +186,9 @@ font-size: 20px;
   margin: 15px;
   border: 2px solid #198787;
   border-radius: 10px;
-  width: 600px;
+  width: 300px;
   height: 40px;
-  font-size: 20px;
+  font-size: 15px;
 
 }
 
@@ -198,7 +197,7 @@ font-size: 20px;
   flex-direction: column;
   width:100%;
   font-size: 15px;
-  margin: 50px;
+  margin: 36px 0 -23px 0;
   height: 100%;
   align-items: center;
 }
@@ -222,8 +221,9 @@ font-size: 20px;
 }
 
 .form a {
-  overflow-x: hidden;
-  padding: 50px;
-
+  padding: 15px 20px;
+  border-radius: 150px;
+  background-color: #198787;
+  color: #ffffff;
+  margin: 14px 110px 47px 125px;
 }
-

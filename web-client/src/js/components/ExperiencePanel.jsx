@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {useEffect, useState} from "react";
 import {ExperienceApi} from "../apis/experiencesApi";
+import {Link} from "react-router-dom";
 
 export const ExperiencePanel = (props) => {
 
@@ -16,19 +17,20 @@ export const ExperiencePanel = (props) => {
     }, []);
 
     return <div>
-        <p className={"titleExperience"}>Experiencias</p>
-
         <div className={"experienceSection"}>
             {props.experiences.map((experience) =>
                 <div className={"experienceCard"} key={experience.id}>
                     <div className={"experienceImage"}>
-                       <div>{experience.image}</div>
+                        <div>{experience.image}</div>
                     </div>
                     <div className={"experienceText"}>
                         <h1 className={"experienceName"}> {experience.name} </h1>
                         <p className={"experienceDescription"}>{experience.description}</p>
-                        <h5 className={"parrafoPrecio"}><p>{experience.pricePerPerson}€ por persona</p>
+                        <h5 className={"parrafoPrecio"}><p><span>{experience.pricePerPerson}€</span> por persona</p>
                         </h5>
+                        <button className={"botonReserva"}>
+                            <Link to={"./Reservas"}>Reservar</Link>
+                        </button>
                     </div>
                 </div>
             )}

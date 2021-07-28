@@ -1,10 +1,10 @@
 import * as React from 'react';
 import {Link, Route, Switch} from "react-router-dom";
-import {FinalReserva} from "./FinalReserva";
+
 
 export const FormularioReserva = () => {
     return (
-        <form>
+        <form className={"form1"}>
                 <div className={"form"}>
                     <label className={"labels"}>Nombre:</label>
                     <input
@@ -50,9 +50,7 @@ export const FormularioReserva = () => {
                 </select>
             </div>
             <div className={"form"}>
-                <button>
                     <Link to={"./FinalReserva"}>Reservar</Link>
-                </button>
             </div>
         </form>
 
