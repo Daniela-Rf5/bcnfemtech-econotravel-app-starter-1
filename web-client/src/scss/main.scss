@@ -14,36 +14,26 @@ body {
 
 }
 
-.footer {
-  display:flex;
-  width: 100%;
-  height: 10%;
-  background-color: #4b7f55;
-  color: #FFFFFFFF;
-  font-size: 18px;
-  bottom: 0;
-  position: fixed;
-  left: 0;
-  text-align:center;
-}
-.parrafos{
-  width: 100%;
 
+/*About*/
+.parrafos{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 9px 80px;
+  text-align: center;
 
 }
 
 .imgFundadora{
-  width: 10%;
-  margin: 80px;
-}
-address {
-  margin-left: 20px;
-  padding: 10px;
+  width: 15%;
+  margin-left: 40%;
+  padding-top: 3%;
 }
 
-copyright p {
-  margin-left: 50%;
-  justify-content: right;
+.contacto{
+  margin-left: 50px;
+  font-size: 15px;
 }
 
 
@@ -63,8 +53,8 @@ a {
   justify-content: flex-start;
 }
 
-/*Experiencia*/
 
+/*Experiencia*/
 .experienceSection{
   display: block;
   justify-content:center;
@@ -119,6 +109,18 @@ a {
   font-weight: bolder;
 }
 
-
+.footer {
+  display:flex;
+  width: 100%;
+  height: 6%;
+  background-color: #4b7f55;
+  color: #FFFFFFFF;
+  font-size: 13px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  text-align:center;
+  justify-content: center;
+}
 
 

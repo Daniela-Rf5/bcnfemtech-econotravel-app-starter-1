@@ -23,7 +23,7 @@ export const About = () => {
                     Barcelona.
                 </p>
             </div>
-            <div>
+            <div className={"contacto"}>
                 <p>Teléfono: 93 000 00 00</p>
                 <p>Correo: info@econotravel.com</p>
                 <p>Dirección: Carrer dels Viatgers, 28, 08000 Barcelona</p>
