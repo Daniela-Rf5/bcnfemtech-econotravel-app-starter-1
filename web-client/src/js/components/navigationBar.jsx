@@ -10,6 +10,7 @@ export const NavigationBar = () => (
             <img className={"Logo"} src={logo}/>
         </div>
         <div>
+            <Link to={"/"}>Inicio</Link>
             <Link to={"/about"}>Quiénes somos</Link>
             <Link to={"/experiencias"}>Experiencias</Link>
             <Link to={"/reservas"}>Reservas</Link>

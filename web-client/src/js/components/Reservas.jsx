@@ -32,7 +32,7 @@ export const FormularioReserva = () => {
                     />
                 </div>
                 <div className={"numPerson"}>
-                    <label  className={"labels"}>Numero de personas:</label>
+                    <label  className={"labels"}>Nº de personas:</label>
                     <input
                         id="personas"
                         type="text"
@@ -40,8 +40,8 @@ export const FormularioReserva = () => {
 
                     />
                 </div>
-            <div>
-                <label>Actividad</label>
+            <div className={"form"}>
+                <label className={"labels"}>Actividad</label>
                 <select id="actividad" name="actividad">
                     <option value={"actividad1"}> Paseo en bicicleta por el Montseny</option>
                     <option value={"actividad2"}> Descubre la costa en barco de vela</option>
@@ -49,7 +49,7 @@ export const FormularioReserva = () => {
                     <option value={"actividad4"}> Del huerto a la mesa</option>
                 </select>
             </div>
-            <div>
+            <div className={"form"}>
                 <button>
                     <Link to={"./FinalReserva"}>Reservar</Link>
                 </button>

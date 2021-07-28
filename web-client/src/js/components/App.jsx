@@ -11,8 +11,7 @@ import viajeBarco from "./assets/viajeBarco.jpg";
 import barcelonaModerna from "./assets/barcelonaModerna.jpg";
 import huerto from "./assets/huerto.jpg";
 import montanaSagrada from "./assets/montanaSagrada.jpg";
-import fundadora from "./assets/fundadora.jpg";
-import {Home} from "./Home"
+import {Home} from "./Home";
 
 
 
@@ -65,7 +64,6 @@ export class App extends React.Component {
                 <Route exact path="/">
                     <Home/>
                 </Route>
-
                 <Route path="/about">
                     <About/>
                 </Route>
