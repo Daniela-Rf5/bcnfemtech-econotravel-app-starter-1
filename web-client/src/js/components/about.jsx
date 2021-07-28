@@ -15,8 +15,7 @@ export const About = () => {
                     naturaleza y el entorno, algo que causaba un progresivo deterioro de los increíbles parajes
                     naturales de
                     Cataluña.
-                </p>
-                <p>
+                    <br/><br/>
                     Preocupada por la falta de alternativas eco-friendly, Marina se propuso fundar una agencia de
                     experiencias
                     turísticas donde el respeto por la naturaleza fuera la principal prioridad. Así nació Econotravel
