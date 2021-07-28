@@ -24,7 +24,7 @@ export const About = () => {
             </div>
             <div className={"contacto"}>
                 <p>Teléfono: 93 000 00 00</p>
-                <p>Correo: info@econotravel.com</p>
+                <p>Correo:<a href={"mailto:info@econotravel.com"}>info@econotravel.com</a></p>
                 <p>Dirección: Carrer dels Viatgers, 28, 08000 Barcelona</p>
             </div>
         </section>

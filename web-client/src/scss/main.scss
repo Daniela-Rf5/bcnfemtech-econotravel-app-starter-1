@@ -65,29 +65,27 @@ a {
 .imgFundadora{
   width: 15%;
   margin-left: 40%;
-  padding-top: 3%;
+  padding-top: 2%;
+  filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 1));
+  border-radius: 10%;
 }
 .parrafos{
-  padding: 50px;
   width: 80%;
   text-align: center;
   font-style:italic;
   line-height: 18pt;
   font-size: 12pt;
   color: #222;
-  margin-left: 100px;
+  margin-left: 120px;
 }
 
 .contacto{
-  padding: 50px;
   margin-left: 50px;
   font-size: 15px;
   display: flex;
   justify-content:space-evenly;
   font-weight: bold;
   font-style:italic;
-
-
 }
 
 /*Experiencia*/
