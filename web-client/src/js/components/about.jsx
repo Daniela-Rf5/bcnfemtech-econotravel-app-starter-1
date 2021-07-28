@@ -16,5 +16,8 @@ export const About = () => <section className={"parrafos"}>
         Preocupada por la falta de alternativas eco-friendly, Marina se propuso fundar una agencia de experiencias
         turísticas donde el respeto por la naturaleza fuera la principal prioridad. Así nació Econotravel Barcelona.
     </p>
+    <p>Teléfono: 93 000 00 00</p>
+    <p>Correo: info@econotravel.com</p>
+    <p>Dirección: Carrer dels Viatgers, 28, 08000 Barcelona</p>
 
 </section>
