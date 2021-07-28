@@ -5,41 +5,41 @@ import {FinalReserva} from "./FinalReserva";
 export const FormularioReserva = () => {
     return (
         <form>
-            <div>
-                <label>Nombre</label>
-                <input
-                    id="nombre"
-                    type="text"
-                    name="nombre"
-                />
-            </div>
-            <div>
-                <label>Correo</label>
-                <input
-                    id="correo"
-                    type="email"
-                    name="correo"
+                <div className={"form"}>
+                    <label className={"labels"}>Nombre:</label>
+                    <input
+                        id="nombre"
+                        type="text"
+                        name="nombre"
+                    />
+                </div>
+                <div className={"form"}>
+                    <label className={"labels"}>Correo:</label>
+                    <input
+                        id="correo"
+                        type="email"
+                        name="correo"
 
-                />
-            </div>
-            <div>
-                <label>Fecha</label>
-                <input
-                    id="fecha"
-                    type="date"
-                    name="fecha"
+                    />
+                </div>
+                <div className={"form"}>
+                    <label className={"labels"}>Fecha:</label>
+                    <input
+                        id="fecha"
+                        type="date"
+                        name="fecha"
 
-                />
-            </div>
-            <div>
-                <label>Numero de personas</label>
-                <input
-                    id="personas"
-                    type="number"
-                    name="personas"
+                    />
+                </div>
+                <div className={"numPerson"}>
+                    <label  className={"labels"}>Numero de personas:</label>
+                    <input
+                        id="personas"
+                        type="text"
+                        name="personas"
 
-                />
-            </div>
+                    />
+                </div>
             <div>
                 <label>Actividad</label>
                 <select id="actividad" name="actividad">
@@ -54,7 +54,7 @@ export const FormularioReserva = () => {
                     <Link to={"./FinalReserva"}>Reservar</Link>
                 </button>
             </div>
-</form>
+        </form>
 
     )
 }
