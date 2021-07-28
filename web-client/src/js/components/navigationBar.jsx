@@ -6,8 +6,9 @@ import logo from './assets/Logo.png';
 export const NavigationBar = () => (
 
     <nav className={"navigationBar"}>
-        <div>
+        <div className={"logotipo"}>
             <img className={"Logo"} src={logo}/>
+            <p>ECONOTRAVEL</p>
         </div>
         <div>
             <Link to={"/"}>Inicio</Link>
