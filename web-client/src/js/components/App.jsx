@@ -61,7 +61,7 @@ export class App extends React.Component {
         return <Router>
             <NavigationBar/>
             <Switch>
-                <Route exact path="/">
+                <Route exact path="/inicio">
                     <Home/>
                 </Route>
                 <Route path="/about">
