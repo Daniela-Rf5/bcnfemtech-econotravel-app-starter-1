@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import logo from './assets/Logo.png';
 
 
@@ -11,10 +11,10 @@ export const NavigationBar = () => (
             <p>ECONOTRAVEL</p>
         </div>
         <div>
-            <Link to={"/"}>Inicio</Link>
-            <Link to={"/about"}>Quiénes somos</Link>
-            <Link to={"/experiencias"}>Experiencias</Link>
-            <Link to={"/reservas"}>Reservas</Link>
+            <NavLink to={"/inicio"}>Inicio</NavLink>
+            <NavLink to={"/about"}>Quiénes somos</NavLink>
+            <NavLink to={"/experiencias"}>Experiencias</NavLink>
+            <NavLink to={"/reservas"}>Reservas</NavLink>
         </div>
     </nav>
 )

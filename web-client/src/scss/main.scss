@@ -12,6 +12,11 @@ body {
   background: #E6FCE6;
   justify-content: space-between;
 
+  .active {
+    color: #f6ecc9;
+    background: #4b7f55;
+  }
+
 }
 a {
   text-decoration: none;
@@ -54,7 +59,7 @@ a {
 .textInicio{
   position: fixed;
   top: 40%;
-  left: 20%;
+  left: 16%;
   font-size: 40px;
   color: #FFFFFF;
   text-shadow: -4px 3px 0 #085223, -14px 7px 0 #0a0e27;
@@ -226,4 +231,12 @@ font-size: 20px;
   background-color: #198787;
   color: #ffffff;
   margin: 14px 110px 47px 125px;
+}
+.reservado {
+  position: fixed;
+  top: 40%;
+  left: 12%;
+  font-size: 40px;
+  color: #808080;
+  text-shadow: -4px 3px 0 #085223;
 }
