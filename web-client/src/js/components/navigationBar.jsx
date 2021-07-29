@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import logo from './assets/Logo.png';
 
 
@@ -11,7 +11,7 @@ export const NavigationBar = () => (
             <p>ECONOTRAVEL</p>
         </div>
         <div>
-            <NavLink to={"/inicio"}>Inicio</NavLink>
+            <Link to={"/"}>Inicio</Link>
             <NavLink to={"/about"}>Quiénes somos</NavLink>
             <NavLink to={"/experiencias"}>Experiencias</NavLink>
             <NavLink to={"/reservas"}>Reservas</NavLink>
