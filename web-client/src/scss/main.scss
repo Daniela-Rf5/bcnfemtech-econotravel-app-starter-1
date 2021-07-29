@@ -69,19 +69,20 @@ a {
 
 .imgFundadora{
   width: 15%;
-  margin-left: 40%;
+  margin-left: 45%;
   padding-top: 2%;
   filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 1));
   border-radius: 10%;
 }
 .parrafos{
-  width: 80%;
+  width: 85%;
   text-align: center;
   font-style:italic;
   line-height: 18pt;
   font-size: 12pt;
   color: #222;
   margin-left: 120px;
+  margin-top: 10px;
 }
 
 .contacto{
@@ -99,7 +100,7 @@ a {
   justify-content:center;
   align-items: center;
   margin-left: 2%;
-  padding: 50px;
+  padding: 45px;
 }
 
 .experienceCard {
@@ -110,24 +111,24 @@ a {
   border-radius: 10px;
   border: 3px solid #008370;
   margin-bottom: 18px;
-  margin-right: 50px;
+  margin-right: 46px;
 }
 
 .experienceImage {
-  width: 70%;
+  width: 77%;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 90px;
 }
 
 .experienceImage img {
-  width: 80%;
-  height: 80%;
+  width: 75%;
   filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 1));
 }
 
 .experienceText {
-  width: 80%;
+  width: 120%;
   align-items: center;
+  margin-right: 3%;
 }
 
 .experienceName {
@@ -138,16 +139,27 @@ a {
 }
 
 .experienceDescription {
-  font-size: 15px;
-  padding: 20px;
+  font-size: 16px;
+  padding: 7px;
   text-align: justify;
-  }
+  font-style:italic;
+  font-family: Rockwell;
+
+}
+.experienceDescription span{
+  color: #085223;
+  font-weight: bold;
+
+}
+.parrafoPrecio p{
+  margin-left: -15%;
+}
 
 .parrafoPrecio span {
   font-size: 18px;
   color: #028174;
   background: #FFE3B3;
-  font-weight: bolder;
+
 }
 
 .footer {
@@ -170,7 +182,7 @@ a {
   border: 2px solid #4b7f55;
   border-radius: 15px;
   background-color: #f6e4c9;
-  margin: 14px 181px 47px 218px;
+  margin: 23px 342px 53px 228px;
 }
 .form {
   display:flex;
@@ -230,7 +242,8 @@ font-size: 20px;
   border-radius: 150px;
   background-color: #198787;
   color: #ffffff;
-  margin: 14px 110px 47px 125px;
+  margin: 14px 115px 47px 125px;
+  margin-right: -60%;
 }
 
 /*Reserva Final*/

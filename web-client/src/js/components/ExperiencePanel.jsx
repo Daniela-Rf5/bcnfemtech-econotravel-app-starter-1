@@ -21,16 +21,20 @@ export const ExperiencePanel = (props) => {
             {props.experiences.map((experience) =>
                 <div className={"experienceCard"} key={experience.id}>
                     <div className={"experienceImage"}>
-                        <div>{experience.image}</div>
+                        {experience.image}
                     </div>
                     <div className={"experienceText"}>
                         <h1 className={"experienceName"}> {experience.name} </h1>
                         <p className={"experienceDescription"}>{experience.description}</p>
+                        <p className={"experienceDescription"}>{experience.description2}</p>
+                        <p className={"experienceDescription"}><span>Duración:</span> {experience.duration}</p>
+                        <p className={"experienceDescription"}><span>Accesibilidad:</span> {experience.accesibility}</p>
+                        <p className={"experienceDescription"}><span>Etiquetas:</span> {experience.labels}</p>
                         <h5 className={"parrafoPrecio"}><p><span>{experience.pricePerPerson}€</span> por persona</p>
                         </h5>
-                        <button className={"botonReserva"}>
+                        <div className={"form"}>
                             <Link to={"./Reservas"}>Reservar</Link>
-                        </button>
+                        </div>
                     </div>
                 </div>
             )}

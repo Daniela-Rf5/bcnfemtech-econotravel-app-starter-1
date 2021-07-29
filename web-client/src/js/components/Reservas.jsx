@@ -1,8 +1,19 @@
 import * as React from 'react';
 import {Link, Route, Switch} from "react-router-dom";
+import {useState} from "react";
+import {FinalReserva} from "./FinalReserva";
 
 
 export const FormularioReserva = () => {
+
+/*   const [submitted, setSubmitted] = useState(false)
+   const [name, setName] = useState("")
+
+    if (submitted) {
+        return <FinalReserva name={name}/>
+    }*/
+
+
     return (
         <form className={"form1"}>
                 <div className={"form"}>
@@ -11,6 +22,8 @@ export const FormularioReserva = () => {
                         id="nombre"
                         type="text"
                         name="nombre"
+                        /*value={name}
+                        onChange={(e) => setName(e.target.value)}*/
                     />
                 </div>
                 <div className={"form"}>
@@ -32,7 +45,7 @@ export const FormularioReserva = () => {
                     />
                 </div>
                 <div className={"numPerson"}>
-                    <label  className={"labels"}>Nº de personas:</label>
+                    <label className={"labels"}>Nº de personas:</label>
                     <input
                         id="personas"
                         type="text"
@@ -49,8 +62,9 @@ export const FormularioReserva = () => {
                     <option value={"actividad4"}> Del huerto a la mesa</option>
                 </select>
             </div>
+            {/*<button onClick={() => setSubmitted(true)}>Reservar</button>*/}
             <div className={"form"}>
-                    <Link to={"./FinalReserva"}>Reservar</Link>
+            <Link to={"./FinalReserva"}>Reservar</Link>
             </div>
         </form>
 
